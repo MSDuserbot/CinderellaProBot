@@ -7,7 +7,7 @@ from telethon import types
 from telethon.tl import functions
 
 from cinderella import dispatcher
-from cinderella.services.events import register
+from telegram.ext import run_async
 from cinderella.services.telethon import tbot
 
 REM_BG_API_KEY = "BT5X1oshY2N1Mg1Q4rpRHGUc"
@@ -26,7 +26,7 @@ async def is_register_admin(chat, user):
         return True
 
 
-@register(pattern="^/rmbg")
+@run_async(pattern="^/rmbg")
 async def _(event):
     HELP_STR = "use `/rmbg` as reply to a media"
     if event.fwd_from:
