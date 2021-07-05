@@ -49,3 +49,5 @@ ffmpeg
 git+https://github.com/Sur-vivor/python-markdown2.git
 apscheduler
 secureme
+bing_image_downloader
+search_engine_parser
