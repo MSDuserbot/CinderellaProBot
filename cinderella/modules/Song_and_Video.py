@@ -274,9 +274,21 @@ async def download_video(v_url):
                          f"{rip_data['title']}.mp4")))
         os.remove(f"{rip_data['id']}.mp4")
         await rkp.delete()
-__help__ = """		  
- /song <songname artist(optional)>: uploads the song in it's best quality available
- /video <songname artist(optional)>: uploads the video song in it's best quality available
-"""
+__mod_name__ = "🎻 MUSIC 🎻"
 
-__mod_name__ = "MUSIC"
+__help__ = """
+🔱 /video <i>query</i>: download video from youtube
+🔱 /deezer <i>query</i>: download from deezer
+🔱 /song <i>query</i>: download song from yt servers. (API BASED)
+🔱 /lyrics <i>song name</i> : This plugin searches for song lyrics with song name.
+🔱 /glyrics <i> song name </i> : This plugin searches for song lyrics with song name and artist.
+🔱 /play <i> song name <i> : To play song in voice chat.
+🔱 /splay <i> song name <i> : To play song in voice chat via jio saavan.
+🔱 /dplay <i> song name <i> : To play song in voice chat via dezzer.
+🔱 /cplay <i> song name <i> : To play song in connected channel.
+🔱 /pause : To pause song in voice chat.
+🔱 /resume : To resume song in voice chat.
+🔱 /cpause : To pause song in channel voice chat.
+🔱 /cresume : To resume song in channel voice chat.
+🔱 /userbotjoin : To join the music assistant in Group.
+"""
