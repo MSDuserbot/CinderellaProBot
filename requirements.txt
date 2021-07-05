@@ -51,3 +51,4 @@ apscheduler
 secureme
 bing_image_downloader
 search_engine_parser
+html2text
