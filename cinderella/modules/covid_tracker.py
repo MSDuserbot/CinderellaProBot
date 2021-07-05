@@ -69,11 +69,11 @@ def corona(bot: Bot, update: Update):
     message.reply_text(reply_text, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
 
 __help__ = """
- - /covid: get worldwide corona status
- - /covindia <state>: Get real time COVID-19 stats for the input Indian state
+ 🔱 /covid: get worldwide corona status
+ 🔱 /covindia <state>: Get real time COVID-19 stats for the input Indian state
 """
 
-__mod_name__ = 'COVID-19 Tracker'
+__mod_name__ = '🦠 COVID 19 🦠'
 
 COV_INDIA_HANDLER = CommandHandler('covindia', covindia)
 CORONA_HANDLER = DisableAbleCommandHandler("covid", corona, admin_ok=True)
