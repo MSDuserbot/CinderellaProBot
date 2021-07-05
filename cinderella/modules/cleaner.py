@@ -196,10 +196,10 @@ def bluetext_ignore_list(bot: Bot, update: Update):
 
 
 __help__ = """
- - /cleanbluetext <on/off/yes/no> - clean commands after sending
- - /ignorecleanbluetext <word> - prevent auto cleaning of the command
- - /unignorecleanbluetext <word> - remove prevent auto cleaning of the command
- - /listcleanbluetext - list currently whitelisted commands
+ 🔱 /cleanbluetext <on/off/yes/no> - clean commands after sending
+ 🔱 /ignorecleanbluetext <word> - prevent auto cleaning of the command
+ 🔱 /unignorecleanbluetext <word> - remove prevent auto cleaning of the command
+ 🔱 /listcleanbluetext - list currently whitelisted commands
 """
 
 SET_CLEAN_BLUE_TEXT_HANDLER = CommandHandler("cleanbluetext", set_blue_text_must_click, pass_args=True)
@@ -218,7 +218,7 @@ dispatcher.add_handler(REMOVE_CLEAN_BLUE_TEXT_GLOBAL_HANDLER)
 dispatcher.add_handler(LIST_CLEAN_BLUE_TEXT_HANDLER)
 dispatcher.add_handler(CLEAN_BLUE_TEXT_HANDLER, BLUE_TEXT_CLEAN_GROUP)
 
-__mod_name__ = "BLUETEXT CLEANING"
+__mod_name__ = "🗑 B TEXT 🗑"
 __handlers__ = [SET_CLEAN_BLUE_TEXT_HANDLER, ADD_CLEAN_BLUE_TEXT_HANDLER, REMOVE_CLEAN_BLUE_TEXT_HANDLER,
                 ADD_CLEAN_BLUE_TEXT_GLOBAL_HANDLER, REMOVE_CLEAN_BLUE_TEXT_GLOBAL_HANDLER,
                 LIST_CLEAN_BLUE_TEXT_HANDLER, (CLEAN_BLUE_TEXT_HANDLER, BLUE_TEXT_CLEAN_GROUP)]
