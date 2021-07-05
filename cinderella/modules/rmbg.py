@@ -8,7 +8,7 @@ from telethon.tl import functions
 
 from cinderella import dispatcher
 from telegram.ext import run_async
-from cinderella.services.telethon import tbot
+from cinderella import bot as tbot
 
 REM_BG_API_KEY = "BT5X1oshY2N1Mg1Q4rpRHGUc"
 TEMP_DOWNLOAD_DIRECTORY = "./"
