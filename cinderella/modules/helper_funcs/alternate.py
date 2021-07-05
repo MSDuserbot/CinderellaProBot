@@ -6,6 +6,7 @@ from typing import Optional
 
 from telegram import User, Chat, ChatMember, Update, Bot
 from telegram import error
+from telegram import ChatAction
 
 from cinderella import DEL_CMDS, SUDO_USERS, WHITELIST_USERS
 
