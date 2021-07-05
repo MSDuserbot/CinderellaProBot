@@ -284,13 +284,13 @@ def connect_button(bot: Bot, update: Update):
         connect_chat(bot, update, [])
 
 __help__ = """
- - /connect: connect a chat (Can be done in a group by /connect or /connect <chat id> in PM)
- - /connection: list connected chats
- - /disconnect: disconnect from a chat
- - /helpconnect: list available commands that can be done remotely
+ 🔱 /connect: connect a chat (Can be done in a group by /connect or /connect <chat id> in PM)
+ 🔱 /connection: list connected chats
+ 🔱 /disconnect: disconnect from a chat
+ 🔱 /helpconnect: list available commands that can be done remotely
 
 *Admin only:*
- - /allowconnect <yes/no>: allow a user to connect to a chat
+ 🔱 /allowconnect <yes/no>: allow a user to connect to a chat
 """
 
 CONNECT_CHAT_HANDLER = CommandHandler("connect", connect_chat, pass_args=True)
@@ -307,5 +307,5 @@ dispatcher.add_handler(ALLOW_CONNECTIONS_HANDLER)
 dispatcher.add_handler(HELP_CONNECT_CHAT_HANDLER)
 dispatcher.add_handler(CONNECT_BTN_HANDLER)
 
-__mod_name__ = "CONNECTIONS"
+__mod_name__ = "🤝 CONNECT 🤝"
 __handlers__ = [CONNECT_CHAT_HANDLER, CONNECTION_CHAT_HANDLER, DISCONNECT_CHAT_HANDLER, ALLOW_CONNECTIONS_HANDLER, HELP_CONNECT_CHAT_HANDLER, CONNECT_BTN_HANDLER]
